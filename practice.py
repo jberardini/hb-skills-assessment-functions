@@ -139,6 +139,9 @@ def is_divisible_by_three(integer):
 def num_spaces(sentence):
     """Takes a sentence as a string and returns the number of spaces"""
 
+    spaces = sentence.count(" ")
+    return spaces
+
 
 
 
@@ -211,17 +214,16 @@ def full_title(name, job_title = "Engineer"):
     return job_title + " " + name
 
     
-def write_letter(contact_info, sender_name):
+def write_letter(name, job_title, sender_name):
     """Prints a letter with the format:
 
        Dear JOB_TITLE RECIPIENT_NAME, I think you are amazing!
        Sincerely, SENDER_NAME.
     """
-    print "Dear {}, I think you are amazing!".format(contact_info)
-    print "Sincerely, {}".format(sender_name)
+    contact_info = full_title(name, job_title)
 
-contact_info = full_title("Karen", "Teacher")
-write_letter(contact_info, "Jill")
+    print "Dear {}, I think you are amazing! Sincerely, {}".format(contact_info, sender_name)
+
 
 
 
