@@ -105,4 +105,27 @@ def hometown_greeting(town_name, first_name, last_name):
 # 3. Make a function that takes in a number and a list of numbers. It should append
 #    the number to the list of numbers and return the list.
 
+def add(x, y):
+    """Adds a number x and a number y"""
+
+    number_sum = x + y
+    return number_sum
+
+def increment(x = 1):
+    """Increments a number y by a number x"""
+
+    number_sum = add(x, 20)
+    return number_sum
+
+addfive = increment(5) 
+
+
+def create_numbers_list(number, numbers_list):
+    """Adds a provided number to a numbers list"""
+
+    numbers_list = numbers_list + [number]
+    return numbers_list
+
+
+
 #####################################################################
